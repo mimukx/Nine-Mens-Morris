@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nine Men's Morris</title>
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon">9</div>
+            <div class="logo-text">MORRIS</div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h2>Current player:</h2>
+    <div id="currentPlayerName"></div>
+    <p><strong>Phase:</strong> <span id="currentPhase"></span></p>
+
+    <div id="board" class="board">
+        <div class="cell" id="a1" onclick="placePiece('a1')"></div>
+        <div class="cell" id="d1" onclick="placePiece('d1')"></div>
+        <div class="cell" id="g1" onclick="placePiece('g1')"></div>
+        <div class="cell" id="b2" onclick="placePiece('b2')"></div>
+        <div class="cell" id="d2" onclick="placePiece('d2')"></div>
+        <div class="cell" id="f2" onclick="placePiece('f2')"></div>
+        <div class="cell" id="c3" onclick="placePiece('c3')"></div>
+        <div class="cell" id="d3" onclick="placePiece('d3')"></div>
+        <div class="cell" id="e3" onclick="placePiece('e3')"></div>
+        <div class="cell" id="a4" onclick="placePiece('a4')"></div>
+        <div class="cell" id="b4" onclick="placePiece('b4')"></div>
+        <div class="cell" id="c4" onclick="placePiece('c4')"></div>
+        <div class="cell" id="e4" onclick="placePiece('e4')"></div>
+        <div class="cell" id="f4" onclick="placePiece('f4')"></div>
+        <div class="cell" id="g4" onclick="placePiece('g4')"></div>
+        <div class="cell" id="c5" onclick="placePiece('c5')"></div>
+        <div class="cell" id="d5" onclick="placePiece('d5')"></div>
+        <div class="cell" id="e5" onclick="placePiece('e5')"></div>
+        <div class="cell" id="b6" onclick="placePiece('b6')"></div>
+        <div class="cell" id="d6" onclick="placePiece('d6')"></div>
+        <div class="cell" id="f6" onclick="placePiece('f6')"></div>
+        <div class="cell" id="a7" onclick="placePiece('a7')"></div>
+        <div class="cell" id="d7" onclick="placePiece('d7')"></div>
+        <div class="cell" id="g7" onclick="placePiece('g7')"></div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="resetGame()">Restart</button>
+        <a href="/home">Back to Menu</a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="copyright">© 2025 GameStudio</div>
+    </div>
+</footer>
+
+<script th:src="@{/js/board.js}"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Game Mode</title>
+    <link rel="stylesheet" href="/css/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon">9</div>
+            <div class="logo-text">MORRIS</div>
+        </div>
+        <nav>
+            <a class="btn" href="/home">BACK</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="game-selection">
+        <h1 class="select-title">SELECT GAME MODE</h1>
+        <form action="/startGame" method="post" class="mode-form">
+            <button type="submit" name="mode" value="pvp" class="mode-btn">Play vs Player</button>
+            <button type="submit" name="mode" value="bot" class="mode-btn">Play vs Bot</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="copyright">© 2025 GameStudio</div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comment-block {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #cabd9a;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.comment-block strong {
+    font-size: 1.1em;
+    color: #a5956d;
+}
+
+.comment-block .time {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 5px;
+}
+
+form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 10px;
+    font-size: 1em;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #8aaaa5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cfdbda;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #3b4b60;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

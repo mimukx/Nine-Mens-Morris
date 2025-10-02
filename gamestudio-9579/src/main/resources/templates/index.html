@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/morris.css}">
+    <title>Nine Men's Morris | Modern Strategy Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <script th:src="@{/js/index.js}"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon">9</div>
+            <div class="logo-text">MORRIS</div>
+        </div>
+        <nav>
+            <a class="btn" href="login">LOG IN</a>
+            <a class="btn" href="register">SIGN UP</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1 class="game-title">NINE MEN'S MORRIS</h1>
+    <p class="game-subtitle">A sleek, modern take on the ancient strategy game. Outmaneuver your opponent in this elegant battle of wits.</p>
+
+    <div class="steps-container">
+        <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+                <h2>Step 1: Spacing</h2>
+                <p>Place chips one at a time to take favorable positions.</p>
+                <div class="image-sequence" data-step="1">
+                    <img src="/images/step1_1.png" class="step-img active" alt="Placement strategy">
+                    <img src="/images/step1_2.png" class="step-img" alt="Board control">
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+                <h2>Step 2: Moving</h2>
+                <p>Move the chips along the lines and create mills.</p>
+                <div class="image-sequence" data-step="2">
+                    <img src="/images/step2_1.png" class="step-img active" alt="Movement tactics">
+                    <img src="/images/step2_2.png" class="step-img" alt="Mill formation">
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+                <h2>Step 3: Flying</h2>
+                <p>When a player has only three pieces left, they can fly to any empty spot.</p>
+                <div class="image-sequence" data-step="3">
+                    <img src="/images/step3_1.png" class="step-img active" alt="Flying phase">
+                    <img src="/images/step3_2.png" class="step-img" alt="Endgame strategy">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="copyright"> &copy; 2025 GameStudio</div>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #e2eeec;
+    color: #333;
+    padding: 30px;
+}
+
+.rules-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #444;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.back-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.2s ease-in-out;
+}
+
+.back-button a:hover {
+    background: #555;
+}

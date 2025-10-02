@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/register_1.css}">
+    <title>Nine Men's Morris | Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon">9</div>
+            <div class="logo-text">MORRIS</div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="auth-container">
+        <h1 class="auth-title">Create Account</h1>
+
+        <div th:if="${message}" class="message success" th:text="${message}"></div>
+        <div th:if="${error}" class="message error" th:text="${error}"></div>
+
+        <form th:action="@{/register}" method="post" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+
+            <button type="submit" class="auth-btn">REGISTER</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="copyright">© 2025 GameStudio</div>
+    </div>
+</footer>
+
+</body>
+</html>

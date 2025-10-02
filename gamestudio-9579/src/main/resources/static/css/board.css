@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap');
+
+:root {
+    --primary: #8AAAA5;
+    --primary-dark: #6B8E89;
+    --light: #E2EEEC;
+    --light-accent: #CFDBDA;
+    --warm: #CABD9A;
+    --gold: #A5956D;
+    --dark: #1A1A1A;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 1.5rem 3rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gold);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--white);
+    letter-spacing: -0.5px;
+}
+
+nav .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.2);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 50px;
+    transition: all 0.3s ;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+}
+
+nav .btn:hover {
+    background-color: var(--gold);
+    transform: translateY(-2px);
+}
+
+
+main {
+    flex: 1;
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#board {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 2rem auto;
+    background-image: url('../images/board-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cell:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.white-piece {
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.black-piece {
+    background-color: black;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+#currentPlayerName {
+    margin: 10px 0;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+button, .buttons a {
+    background-color: var(--white);
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    border: 1px solid var(--light-accent);
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+button:hover, .buttons a:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#a1 { top: 20px; left: 25px; }
+#d1 { top: 20px; left: 233px; }
+#g1 { top: 20px; left: 440px; }
+#b2 { top: 90px; left: 90px; }
+#d2 { top: 90px; left: 233px; }
+#f2 { top: 90px; left: 375px; }
+#c3 { top: 160px; left: 160px; }
+#d3 { top: 160px; left: 233px; }
+#e3 { top: 160px; left: 300px; }
+#a4 { top: 230px; left: 25px; }
+#b4 { top: 230px; left: 93px; }
+#c4 { top: 230px; left: 163px; }
+#e4 { top: 230px; left: 303px; }
+#f4 { top: 230px; left: 373px; }
+#g4 { top: 230px; left: 440px; }
+#c5 { top: 300px; left: 162px; }
+#d5 { top: 300px; left: 233px; }
+#e5 { top: 300px; left: 302px; }
+#b6 { top: 370px; left: 92px; }
+#d6 { top: 370px; left: 233px; }
+#f6 { top: 370px; left: 373px; }
+#a7 { top: 440px; left: 23px; }
+#d7 { top: 440px; left: 233px; }
+#g7 { top: 440px; left: 440px; }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine Men's Morris | Player Profile</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-icon">9</div>
+            <div class="logo-text">MORRIS</div>
+        </div>
+        <nav>
+            <a class="btn" th:href="@{/logout}">LOGOUT</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="profile-header">
+        <h1 class="welcome-title">WELCOME, <span class="username" th:text="${username}">Player</span>!</h1>
+
+        <div class="profile-nav">
+            <a href="/game">PLAY OFFLINE</a>
+            <a th:href="@{/rating}">RATING</a>
+            <a href="/comments">COMMENTS</a>
+            <a th:href="@{/rules}">RULES</a>
+        </div>
+    </div>
+
+    <div class="stats-container">
+        <h2 class="stats-title">YOUR STATS</h2>
+
+        <div class="stat-item">
+            <span class="stat-label">WINS</span>
+            <span class="stat-value" th:text="${score?.points ?: 0}">0</span>
+        </div>
+
+        <div class="stat-item">
+            <span class="stat-label">RATING</span>
+            <span class="stat-value">
+                <span class="rating-value" th:text="${rating ?: 'N/A'}"></span>/5
+            </span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="copyright"> &copy; 2025 GameStudio</div>
+    </div>
+</footer>
+
+</body>
+</html>
